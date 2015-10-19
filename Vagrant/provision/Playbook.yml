@@ -1,0 +1,20 @@
+---
+- hosts: all
+  roles:
+    - apache2
+    - mariadb
+	
+roles/
+    apache2
+        tasks
+            main.yml
+        files
+            index.php
+			
+roles/
+    mariadb
+        tasks
+            main.yml
+        files
+            db.php
+            dump.sql
